@@ -1,1 +1,17 @@
-<p>booking works!</p>
+<ul class="nav justify-content-center mt-3">
+    <li class="nav-item px-3" *ngFor="let content of categories; let i = index">
+        <button class="btn btn-primary" id="{{i}}" name="{{content.name}}"
+            (click)="chooseproperty($event)">{{content.name}}</button>
+    </li>
+</ul>
+<div class="container">
+    <div class="jumbotron mt-3">
+        <div *ngFor="let place of places">
+            {{place.name}}
+        </div>
+        <div *ngIf="!places">
+            no places
+        </div>
+    </div>
+
+</div>

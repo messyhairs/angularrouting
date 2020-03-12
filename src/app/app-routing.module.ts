@@ -6,7 +6,8 @@ import { BookingComponent } from './booking/booking.component';
 import { WhoweComponent } from './whowe/whowe.component';
 import { WedoComponent } from './wedo/wedo.component';
 import { WehaveComponent } from './wehave/wehave.component';
-
+import { HotelComponent } from './hotel/hotel.component';
+import { JourneyComponent } from './journey/journey.component';
 const routes: Routes = [
   {
     path: 'about',
@@ -26,11 +27,19 @@ const routes: Routes = [
   },
   {
     path: 'dashboard/:userdetails',
-    component: DashboardComponent
+    component: DashboardComponent,
   },
   {
     path: 'booking',
-    component: BookingComponent
+    component: BookingComponent,
+    children: [{
+      path: 'hotel',
+      component: HotelComponent
+    },
+    {
+      path: 'journey',
+      component: JourneyComponent
+    }]
   }
 ];
 

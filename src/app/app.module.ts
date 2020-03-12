@@ -9,6 +9,8 @@ import { BookingComponent } from './booking/booking.component';
 import { WhoweComponent } from './whowe/whowe.component';
 import { WedoComponent } from './wedo/wedo.component';
 import { WehaveComponent } from './wehave/wehave.component';
+import { HotelComponent } from './hotel/hotel.component';
+import { JourneyComponent } from './journey/journey.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { WehaveComponent } from './wehave/wehave.component';
     BookingComponent,
     WhoweComponent,
     WedoComponent,
-    WehaveComponent
+    WehaveComponent,
+    HotelComponent,
+    JourneyComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,8 @@
+<router-outlet>
+    <h3 class="jumbotron text-center">hey you are in childrouting</h3>
+    <div class="scrollmenu text-center mt-3" [class.w-50]="!ismobile">
+        <a routerLink="wedo" routerLinkActive="bg-success">what we do?</a>
+        <a [routerLink]="['wehave', 2]" routerLinkActive="bg-success">what we have?</a>
+        <a routerLink="whowe" routerLinkActive="bg-success">who we are?</a>
+    </div>
+</router-outlet>

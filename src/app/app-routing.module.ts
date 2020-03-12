@@ -33,7 +33,7 @@ const routes: Routes = [
     path: 'booking',
     component: BookingComponent,
     children: [{
-      path: 'hotel',
+      path: 'residency',
       component: HotelComponent
     },
     {

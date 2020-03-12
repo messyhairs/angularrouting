@@ -38,6 +38,7 @@ export class BookingComponent implements OnInit {
   constructor(private titleService: Title, private metaTagService: Meta, private router: Router, private routes: ActivatedRoute) { }
   ngOnInit() {
     this.titleService.setTitle('chooseproperty');
+    console.log(this.places);
   }
   chooseproperty(event) {
     if (event) {
@@ -51,7 +52,8 @@ export class BookingComponent implements OnInit {
         console.log(this.places);
         console.log(this.router.url + '/' + event.target.name);
         this.routes.paramMap.subscribe(params => {
-        console.log(params.get(event.target.name));
+          params.get(event.target.name);
+          this.router.navigate([this.router.url + '/' +  params.get(event.target.name)]);
         });
       }
     }

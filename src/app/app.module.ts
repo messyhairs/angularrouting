@@ -13,6 +13,8 @@ import { WehaveComponent } from './wehave/wehave.component';
 import { HotelComponent } from './hotel/hotel.component';
 import { JourneyComponent } from './journey/journey.component';
 import { FilterPipe } from './filter.pipe';
+import { ResidencyComponent } from './residency/residency.component';
+import { ResidencydetailsComponent } from './residencydetails/residencydetails.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FilterPipe } from './filter.pipe';
     WehaveComponent,
     HotelComponent,
     JourneyComponent,
-    FilterPipe
+    FilterPipe,
+    ResidencyComponent,
+    ResidencydetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,10 @@ import { WedoComponent } from './wedo/wedo.component';
 import { WehaveComponent } from './wehave/wehave.component';
 import { HotelComponent } from './hotel/hotel.component';
 import { JourneyComponent } from './journey/journey.component';
+import { ResidencyComponent } from './residency/residency.component';
+import { ResidencydetailsComponent } from './residencydetails/residencydetails.component';
+
+
 const routes: Routes = [
   {
     path: 'about',
@@ -28,6 +32,14 @@ const routes: Routes = [
   {
     path: 'dashboard/:userdetails',
     component: DashboardComponent,
+  },
+  {
+    path: 'residency',
+    component: ResidencyComponent
+  },
+  {
+    path: 'residencydetails/:id',
+    component: ResidencydetailsComponent
   },
   {
     path: 'booking',

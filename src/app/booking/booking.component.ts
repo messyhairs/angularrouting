@@ -53,7 +53,7 @@ export class BookingComponent implements OnInit {
         console.log(this.router.url + '/' + event.target.name);
         this.routes.paramMap.subscribe(params => {
           params.get(event.target.name);
-          this.router.navigate([this.router.url + '/' +  params.get(event.target.name)]);
+          this.router.navigate([this.router.url + '/' + params.get(event.target.name)]);
         });
       }
     }
